@@ -10,16 +10,19 @@ namespace HolaMundo_Maui
             InitializeComponent();
         }
 
-
         private async void OnCounterClicked(object sender, EventArgs e)
         {
 
-            string apellido = await DisplayPromptAsync("Pregunta", "Cual es tu apellido");
+            persona.Nombre = nombre.Text;
+            persona.Apellidos = await DisplayPromptAsync("Pregunta", "Cual es tu apellido");
 
-            if (!string.IsNullOrEmpty(nombre.Text) && !string.IsNullOrEmpty(apellido))
+            if (!string.IsNullOrEmpty(nombre.Text) && !string.IsNullOrEmpty(persona.Apellidos))
             {
-                await DisplayAlert("Hola",nombre.Text+" "+apellido, "OK");
+                await DisplayAlert("Hola",persona.NombreCompleto, "OK");
             }
+
+
+
         }
     }
 }

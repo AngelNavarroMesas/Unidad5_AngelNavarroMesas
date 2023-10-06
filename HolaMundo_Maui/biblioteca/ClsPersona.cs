@@ -4,7 +4,7 @@ using System.Text;
 
 namespace biblioteca
 {
-    internal class ClsPersona
+    public class ClsPersona
     {
         #region atributos
         private String _nombre;
@@ -39,7 +39,7 @@ namespace biblioteca
         public String Direccion { get; set; }
         public String NombreCompleto
         {
-            get { return $"Su nombre completo es {Nombre} {Apellidos}"; }
+            get { return $"{Nombre} {Apellidos}"; }
         }
         #endregion
 
