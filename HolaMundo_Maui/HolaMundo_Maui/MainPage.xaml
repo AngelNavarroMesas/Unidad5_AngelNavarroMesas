@@ -58,6 +58,12 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center"/>
 
+            <Entry Placeholder="" x:Name="texto2" BindingContext="{x:Reference texto1}" Text="{Binding Text}"/>
+
+            <Entry Placeholder="" x:Name="texto1"/>
+
+            <DatePicker />
+
         </VerticalStackLayout>
     </ScrollView>
 
