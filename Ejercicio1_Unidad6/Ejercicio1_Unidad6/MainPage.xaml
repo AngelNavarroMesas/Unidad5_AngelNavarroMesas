@@ -5,6 +5,7 @@
 
     <ScrollView>
         <VerticalStackLayout
+            x:Name="vSLButtons"
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
@@ -15,9 +16,9 @@
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
-            <Button x:Name="button1" Text="boton1" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Blue" HeightRequest="70" WidthRequest="200" FontFamily="Verdana" FontAttributes="Bold" FontSize="16" BorderColor="Yellow" Margin="30"/>
+            <Button x:Name="boton1" Text="boton1" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Blue" HeightRequest="70" WidthRequest="200" FontFamily="Verdana" FontAttributes="Bold" FontSize="16" BorderColor="Yellow" Margin="30"/>
 
-            <Button Clicked="Click">
+            <Button x:Name="boton2" Clicked="Click">
                 <Button.Text>boton2</Button.Text>
                 <Button.HorizontalOptions>Center</Button.HorizontalOptions>
                 <Button.VerticalOptions>Center</Button.VerticalOptions>
@@ -30,9 +31,9 @@
                 <Button.BorderColor>yellow</Button.BorderColor>
                 <Button.Margin>30</Button.Margin>
             </Button>
-        
+
             
-        
+
         </VerticalStackLayout>
     </ScrollView>
 
