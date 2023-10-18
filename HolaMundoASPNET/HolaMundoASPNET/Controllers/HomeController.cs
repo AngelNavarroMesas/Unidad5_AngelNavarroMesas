@@ -6,7 +6,7 @@ namespace HolaMundoASPNET.Controllers
     {
         public IActionResult Index()
         {
-            return Index();
+            return View();
         }
 
         public String Apellidos()
