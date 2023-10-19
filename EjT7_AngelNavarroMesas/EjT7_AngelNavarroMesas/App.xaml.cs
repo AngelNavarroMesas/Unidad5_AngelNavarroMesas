@@ -1,4 +1,6 @@
-﻿namespace EjT7_AngelNavarroMesas
+﻿using EjT7_AngelNavarroMesas.Views;
+
+namespace EjT7_AngelNavarroMesas
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new EjT7_AngelNavarroMesas.Views.PagTabbed();
+            MainPage = new NavigationPage(new MainPage());
         }
     }
 }

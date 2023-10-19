@@ -2,14 +2,21 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EjT7_AngelNavarroMesas.Views.Pagina3"
-             Title="Pagina3">
+             Title="Pagina3"
+             IconImageSource="three.png">
+    
     <VerticalStackLayout>
-
-        <Image Source="C:\Users\anavarro\Documents\imagenes\3.png"  HeightRequest="100" WidthRequest="100"/>
-
         <Label 
             Text="hola soy Pagina3"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Button
+            x:Name="BtnInicio"
+            Text="Inicio"
+            SemanticProperties.Hint="Counts the number of times you click"
+            Clicked="Click"
+            HorizontalOptions="Center" />
+        
     </VerticalStackLayout>
 </ContentPage>
