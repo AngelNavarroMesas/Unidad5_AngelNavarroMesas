@@ -10,6 +10,8 @@
             VerticalOptions="Center">
             
             <Entry Placeholder="" />
+            <Entry Placeholder="" />
+            <Entry Placeholder="" />
             
             <Image
                 Source="dotnet_bot.png"
@@ -33,9 +35,21 @@
             <Button
                 x:Name="CounterBtn"
                 Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
+
+            <Button
+                x:Name="btnPag4"
+                Text="Pagina 4"
+                Clicked="ClickPag4"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="btnPag5"
+                Text="Pagina 5"
+                Clicked="ClickPag5"
+                HorizontalOptions="Center" />
+
 
         </VerticalStackLayout>
     </ScrollView>

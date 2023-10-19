@@ -7,5 +7,7 @@
     <local:Pagina1></local:Pagina1>
     <local:Pagina2></local:Pagina2>
     <local:Pagina3></local:Pagina3>
+    <local:Pagina4></local:Pagina4>
+    <local:Pagina5></local:Pagina5>
     
 </TabbedPage>
