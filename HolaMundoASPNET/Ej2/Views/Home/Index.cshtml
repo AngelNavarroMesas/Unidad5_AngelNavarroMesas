@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    
+    DateTime fecha = DateTime.Now;
+    int hora = fecha.Hour;
+    int min = fecha.Minute;
+}
+
+<h1>Hola, son las @hora:@min</h1>
+
+@if(hora<12){ <h2>No hemos pasado las 12 del mediodia</h2>}else{<h2>Hemos pasado las 12 del mediodia</h2>}
