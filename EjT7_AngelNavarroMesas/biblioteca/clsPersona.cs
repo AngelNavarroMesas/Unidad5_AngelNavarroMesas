@@ -8,6 +8,6 @@ namespace biblioteca
 {
     internal class clsPersona
     {
-        public clsPersona(String nombre, String apellidos) { }
+        public clsPersona(String nombre, String apellidos) {}
     }
 }
